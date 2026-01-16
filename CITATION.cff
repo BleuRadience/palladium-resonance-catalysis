@@ -1,1 +1,47 @@
-
+cff-version: 1.2.0
+message: "If you use this model or code in your research, please cite it using the information below."
+type: software
+title: "Palladium Resonance Catalysis Model"
+authors:
+  - family-names: Harrison
+    given-names: Cassandra D.
+    orcid: "https://orcid.org/0000-0000-0000-0000"   # ← replace with your real ORCID if you have one; otherwise delete this line
+    affiliation: "Independent Researcher"
+    email: "cassandrahrrsn9@gmail.com"
+contact:
+  - family-names: Harrison
+    given-names: Cassandra D.
+    email: "cassandrahrrsn9@gmail.com"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.18070952                 # original LENR v1 DOI
+  - type: doi
+    value: 10.5281/zenodo.NEWDOI                   # ← replace with your new catalysis Zenodo DOI after publishing
+repository-code: "https://github.com/bleuradience/palladium-resonance-catalysis"
+url: "https://github.com/bleuradience/palladium-resonance-catalysis"
+license: MIT
+version: "1.0"
+date-released: 2026-01-16
+abstract: >
+  Theoretical simulation of resonance-enhanced barrier suppression in palladium nanoparticles.
+  Original LENR model in superabundant vacancy phases; extended to ambient-temperature hydrogenation catalysis for pharmaceutical synthesis.
+keywords:
+  - resonance
+  - palladium
+  - nanoparticles
+  - hydrogenation
+  - catalysis
+  - LENR
+  - nanocatalysis
+  - pharmaceutical synthesis
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Harrison
+      given-names: Cassandra D.
+  title: "Resonance-Enhanced Barrier Suppression in Palladium Nanoparticles: Theoretical Simulation of Ambient-Temperature Hydrogenation Catalysis"
+  collection-title: "Independent Research Archive"
+  collection-type: archive
+  doi: 10.5281/zenodo.NEWDOI                     # ← update after Zenodo publication
+  year: 2026
+  month: 1
