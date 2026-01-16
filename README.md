@@ -26,13 +26,27 @@ Theoretical simulation of resonance-driven barrier suppression in palladium-base
 
 
 ## Getting Started
+`# Palladium Resonance Catalysis Model
+
+Simulation of resonance-driven barrier suppression in palladium-based nanostructures.  
+- Original LENR-focused model (superabundant vacancy phases): [Zenodo v1](https://doi.org/10.5281/zenodo.18070952)  
+- Extension to ambient-temperature hydrogenation catalysis (pharma-relevant): this repo + forthcoming Zenodo entry
+
+## Overview
+Coupled oscillator resonance + Thomas-Fermi screening + topological bundle proxy → exponential rate boosts.  
+Biotech application: Predicts >99% nitroarene hydrogenation yields at 25°C on Pd nanoparticles (vs. ~17% standard).
+
+## Key Files
+- `lenr_sav_nano.py` — Original LENR resonance code (unchanged)  
+- `catalysis_resonance_sim.py` — Extended simulation: hydrogenation ODE, parameter sweeps, Monte Carlo, plots  
+- `MANUSCRIPT.md` — Theoretical manuscript (catalysis focus)  
+- `PROTOCOL.md` — Reproducible experimental validation guide (incl. DFT phase)  
+- `figures/` — Output plots (heatmap, trajectories, yield curves, MC distribution)
+
+## Quick Start
 ```bash
-# Clone the repo
-git clone https://github.com/YOUR_USERNAME/palladium-resonance-catalysis.git
+git clone https://github.com/bleuradience/palladium-resonance-catalysis.git
 cd palladium-resonance-catalysis
 
-# Install dependencies (minimal)
-pip install numpy scipy matplotlib
-
+pip install numpy scipy matplotlib  # minimal deps
 python catalysis_resonance_sim.py
-
