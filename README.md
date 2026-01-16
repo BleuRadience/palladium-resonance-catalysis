@@ -20,3 +20,15 @@ Theoretical simulation of resonance-driven barrier suppression in palladium-base
 ├── figures/                       # Output plots (heatmap, trajectories, yield curves, MC hist)
 ├── boosts.npy                     # Saved sweep results (git ignored by default)
 └── README.md
+
+
+## Getting Started
+```bash
+# Clone the repo
+git clone https://github.com/YOUR_USERNAME/palladium-resonance-catalysis.git
+cd palladium-resonance-catalysis
+
+# Install dependencies (minimal)
+pip install numpy scipy matplotlib
+
+python catalysis_resonance_sim.py
