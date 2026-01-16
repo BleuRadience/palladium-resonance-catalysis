@@ -50,5 +50,4 @@ License
 MIT — see LICENSE
 Open to feedback, experimental collaborations, validation proposals, or suggestions for further extensions.
 — BleuRadience / Cassandra D. Harrison
-Independent Researcher, Houston, TX  # minimal deps
-python catalysis_resonance_sim.py
+Independent Researcher, Houston, TX  
