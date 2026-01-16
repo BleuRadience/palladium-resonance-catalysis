@@ -1,5 +1,8 @@
 # Palladium Resonance Catalysis Model
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)  <!-- update with new DOI -->
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Theoretical simulation of resonance-driven barrier suppression in palladium-based systems, originally developed for low-energy nuclear reaction (LENR) pathways in superabundant vacancy (SAV) phases, now extended to ambient-temperature hydrogenation catalysis for pharmaceutical synthesis.
 
 - Original LENR model (v1): [Zenodo DOI](https://doi.org/10.5281/zenodo.18070952)  
@@ -33,5 +36,3 @@ pip install numpy scipy matplotlib
 
 python catalysis_resonance_sim.py
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)  <!-- update with new DOI -->
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
