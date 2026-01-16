@@ -1,52 +1,54 @@
 # Palladium Resonance Catalysis Model
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)  <!-- update with new DOI -->
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+Simulation of resonance-driven barrier suppression in palladium-based nanostructures, originally developed for low-energy nuclear reaction (LENR) pathways in superabundant vacancy (SAV) phases and now extended to ambient-temperature hydrogenation catalysis relevant to pharmaceutical synthesis.
 
-Theoretical simulation of resonance-driven barrier suppression in palladium-based systems, originally developed for low-energy nuclear reaction (LENR) pathways in superabundant vacancy (SAV) phases, now extended to ambient-temperature hydrogenation catalysis for pharmaceutical synthesis.
-
-- Original LENR model (v1): [Zenodo DOI](https://doi.org/10.5281/zenodo.18070952)  
-- Catalysis extension (this repo): Standalone simulation of nitroarene hydrogenation on Pd nanoparticles, predicting >99% yields at 25°C via resonance boost.
-
-## Features
-- Coupled oscillator resonance model with Thomas-Fermi screening and topological bundle proxy  
-- Parameter sweeps (surface factor, detune) and Monte Carlo uncertainty analysis  
-- Full ODE simulation of 4-step hydrogenation pathway (nitrobenzene → aniline)  
-- Heatmap visualization of resonance boosts  
-- Reproducible experimental protocol outline in `/protocol.md`
-
-## Repository Structure
-├── lenr_sav_nano.py               # Original LENR resonance code (unchanged)
-├── catalysis_resonance_sim.py     # Extended simulation with hydrogenation ODE, sweeps, MC
-├── MANUSCRIPT.md                  # Theoretical manuscript (catalysis focus)
-├── PROTOCOL.md                    # Reproducible experimental validation protocol
-├── figures/                       # Output plots (heatmap, trajectories, yield curves, MC hist)
-├── boosts.npy                     # Saved sweep results (git ignored by default)
-└── README.md
-
-
-## Getting Started
-`# Palladium Resonance Catalysis Model
-
-Simulation of resonance-driven barrier suppression in palladium-based nanostructures.  
-- Original LENR-focused model (superabundant vacancy phases): [Zenodo v1](https://doi.org/10.5281/zenodo.18070952)  
-- Extension to ambient-temperature hydrogenation catalysis (pharma-relevant): this repo + forthcoming Zenodo entry
+- Original LENR model: [Zenodo v1](https://doi.org/10.5281/zenodo.18070952)
+- Catalysis extension: This repository + forthcoming separate Zenodo entry
 
 ## Overview
-Coupled oscillator resonance + Thomas-Fermi screening + topological bundle proxy → exponential rate boosts.  
-Biotech application: Predicts >99% nitroarene hydrogenation yields at 25°C on Pd nanoparticles (vs. ~17% standard).
+The model uses coupled oscillator resonance, Thomas-Fermi screening, and a topological bundle proxy to generate exponential rate enhancements.  
+The biotech/pharma application simulates selective hydrogenation of nitroarenes (nitrobenzene → aniline as a model for oncology API intermediates) on Pd nanoparticles, predicting near-complete yields (>99%) at room temperature (25°C) under resonance enhancement — versus very low yields (~17%) in standard Pd NP catalysis.
 
 ## Key Files
-- `lenr_sav_nano.py` — Original LENR resonance code (unchanged)  
-- `catalysis_resonance_sim.py` — Extended simulation: hydrogenation ODE, parameter sweeps, Monte Carlo, plots  
-- `MANUSCRIPT.md` — Theoretical manuscript (catalysis focus)  
-- `PROTOCOL.md` — Reproducible experimental validation guide (incl. DFT phase)  
-- `figures/` — Output plots (heatmap, trajectories, yield curves, MC distribution)
+- `lenr_sav_nano.py`          Original LENR resonance code (unchanged from v1)
+- `catalysis_resonance_sim.py` Extended simulation: hydrogenation ODE, parameter sweeps, Monte Carlo uncertainty, automatic plot generation
+- `MANUSCRIPT.md`             Theoretical manuscript describing the catalysis mapping and results
+- `PROTOCOL.md`               Reproducible experimental validation guide (synthesis, testing, DFT phase)
+- `figures/`                  Output plots (generated when you run the code)
 
 ## Quick Start
 ```bash
+# Clone the repository
 git clone https://github.com/bleuradience/palladium-resonance-catalysis.git
 cd palladium-resonance-catalysis
 
-pip install numpy scipy matplotlib  # minimal deps
+# Install minimal dependencies (one time)
+pip install numpy scipy matplotlib
+
+# Run the simulation — generates figures in /figures/
+python catalysis_resonance_sim.py
+Generated Outputs
+Running the script produces four figures in the figures/ folder:
+
+resonance_trajectory.png — Coupled oscillator positions over time (example detune=1.00)
+boost_heatmap.png — Log-scale resonance boost across surface factors and detunes
+yield_curves.png — Amine yield vs. time (standard vs. enhanced at 25°C)
+mc_histogram.png — Distribution of final yields from 50 Monte Carlo runs
+
+These visuals demonstrate the dramatic predicted difference: standard catalysis is slow at room temperature, while resonance enhancement achieves near-instant high yields.
+To regenerate or customize:
+
+Modify sweep ranges, temperature, pre-factor A, MC count, etc. directly in catalysis_resonance_sim.py
+Re-run the script — new figures overwrite the old ones
+
+Related Work
+
+Zenodo v1 (LENR original model): https://doi.org/10.5281/zenodo.18070952
+Forthcoming Zenodo entry: catalysis extension (DOI to be added after publication)
+
+License
+MIT — see LICENSE
+Open to feedback, experimental collaborations, validation proposals, or suggestions for further extensions.
+— BleuRadience / Cassandra D. Harrison
+Independent Researcher, Houston, TX  # minimal deps
 python catalysis_resonance_sim.py
