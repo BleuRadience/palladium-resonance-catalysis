@@ -32,3 +32,6 @@ cd palladium-resonance-catalysis
 pip install numpy scipy matplotlib
 
 python catalysis_resonance_sim.py
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)  <!-- update with new DOI -->
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
