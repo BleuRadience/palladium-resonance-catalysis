@@ -3,8 +3,8 @@
 Simulation of resonance-driven barrier suppression in palladium-based nanostructures, originally developed for low-energy nuclear reaction (LENR) pathways in superabundant vacancy (SAV) phases and now extended to ambient-temperature hydrogenation catalysis relevant to pharmaceutical synthesis.
 
 - Original LENR model: [Zenodo v1](https://doi.org/10.5281/zenodo.18070952)
-- Catalysis extension: This repository + forthcoming separate Zenodo entry
-
+- Catalysis extension: [This repository + forthcoming separate Zenodo entry
+](https://doi.org/10.5281/zenodo.18275216)
 ## Overview
 The model uses coupled oscillator resonance, Thomas-Fermi screening, and a topological bundle proxy to generate exponential rate enhancements.  
 The biotech/pharma application simulates selective hydrogenation of nitroarenes (nitrobenzene → aniline as a model for oncology API intermediates) on Pd nanoparticles, predicting near-complete yields (>99%) at room temperature (25°C) under resonance enhancement — versus very low yields (~17%) in standard Pd NP catalysis.
