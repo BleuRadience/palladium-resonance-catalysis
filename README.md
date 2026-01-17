@@ -44,8 +44,8 @@ Re-run the script — new figures overwrite the old ones
 Related Work
 
 Zenodo v1 (LENR original model): https://doi.org/10.5281/zenodo.18070952
-Forthcoming Zenodo entry: catalysis extension (DOI to be added after publication)
-
+ Zenodo entry: catalysis extension
+(https://doi.org/10.5281/zenodo.18275216)
 License
 MIT — see LICENSE
 Open to feedback, experimental collaborations, validation proposals, or suggestions for further extensions.
