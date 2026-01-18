@@ -47,7 +47,7 @@ Zenodo v1 (LENR original model): https://doi.org/10.5281/zenodo.18070952
  Zenodo entry: catalysis extension
 (https://doi.org/10.5281/zenodo.18275216)
 License
-MIT — see LICENSE
+CC BY-NC-SA 4.0 — see LICENSE
 Open to feedback, experimental collaborations, validation proposals, or suggestions for further extensions.
 — BleuRadience / Cassandra D. Harrison
 Independent Researcher, Houston, TX  
