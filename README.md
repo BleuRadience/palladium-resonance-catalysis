@@ -41,13 +41,14 @@ To regenerate or customize:
 Modify sweep ranges, temperature, pre-factor A, MC count, etc. directly in catalysis_resonance_sim.py
 Re-run the script — new figures overwrite the old ones
 
-Related Work
-
-Zenodo v1 (LENR original model): https://doi.org/10.5281/zenodo.18070952
- Zenodo entry: catalysis extension
-(https://doi.org/10.5281/zenodo.18275216)
 License
 CC BY-NC-SA 4.0 — see LICENSE
+
+**Archived & Curated in Zenodo NFDI4Cat Community**  
+This work is now part of NFDI4Cat (National Research Data Infrastructure for Catalysis-Related Sciences).  
+Zenodo Record: https://doi.org/10.5281/zenodo.18275216  
+Community Page: https://zenodo.org/communities/nfdi4cat/records/18275216
+
 Open to feedback, experimental collaborations, validation proposals, or suggestions for further extensions.
 — BleuRadience / Cassandra D. Harrison
 Independent Researcher, Houston, TX  
